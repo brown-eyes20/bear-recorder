@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html lang="
-" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width", initial-scale=1.0 >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bear recorder</title>
-    <link rel="stylesheet" href="css.css">
-
+    <link rel="stylesheet" href="./css.css">
+    <script src="./main.js" defer></script>
   </head>
 
   <body>
     <div class="">
-      <h1>wlecome to bear recorder</h1>
+      <h1>welcome to bear recorder</h1>
     </div>
 
     <div class="">
-      <div class="start">
+      <button class="start" id="recording-btn">
         start record
-      </div>
+      </button>
+      <button class="stop" id="stop-btn" style="display: none;">
+        stop recording
+      </button>
     </div>
-
 
     <div class="">
-      <p>developers:
-        <br>
-      <a href="https://github.com/ImTheSadra">Sadra Goeorgi</a>
-      <br>
-      <a href="https://github.com/brown-eyes20">Brown Eyes</a>
-
-    </p>
-
+      <p id="status-msg" style="display: none;"></p>
     </div>
 
+    <div class="">
+      <button id="download-btn" style="display: none;">
+        download recording
+      </button>
+    </div>
+
+    <div class="">
+      <pre>developers:
+<a href="https://github.com/ImTheSadra">Sadra Goeorgi</a>
+<a href="https://github.com/brown-eyes20">Brown Eyes</a>
+      </pre>
+    </div>
   </body>
+
+  <video id="recordedVideo" controls style="display: none;"></video>
+</html>
